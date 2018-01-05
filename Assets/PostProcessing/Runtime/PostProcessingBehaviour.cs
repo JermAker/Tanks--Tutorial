@@ -346,7 +346,7 @@ namespace UnityEngine.PostProcessing
             m_EyeAdaptation.ResetHistory();
         }
 
-        #region State management
+#region State management
 
         List<PostProcessingComponentBase> m_ComponentsToEnable = new List<PostProcessingComponentBase>();
         List<PostProcessingComponentBase> m_ComponentsToDisable = new List<PostProcessingComponentBase>();
@@ -393,9 +393,9 @@ namespace UnityEngine.PostProcessing
             }
         }
 
-        #endregion
+#endregion
 
-        #region Command buffer handling & rendering helpers
+#region Command buffer handling & rendering helpers
         // Placeholders before the upcoming Scriptable Render Loop as command buffers will be
         // executed on the go so we won't need of all that stuff
         CommandBuffer AddCommandBuffer<T>(CameraEvent evt, string name)
@@ -471,6 +471,6 @@ namespace UnityEngine.PostProcessing
             return component;
         }
 
-        #endregion
+#endregion
     }
 }
